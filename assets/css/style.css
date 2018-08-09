@@ -4,9 +4,9 @@
 
 .grid-container-header {
     display: grid;
-    grid-template-columns: 600px 120px 120px 120px;
+    grid-template-columns: 62.5% 12.5% 12.5% 12.5%;
     width: 960px;
-    height: 90px;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
 }
@@ -27,7 +27,7 @@
 
 body {
    background-image: url("../images/dark_embroidery.png")
-    }
+}
 
 #HopeGratrix {
     background: #96042d;
@@ -66,14 +66,14 @@ body {
 }
 
 footer {
-    width: 100%;
-    height: 45px;
     background: #808080;
     border-top-style: solid;
     border-color: #e6e6e6;
     border-width: 5px;
     position: relative;
     bottom: 0;
+    width:100%;
+    height:40px;
 }
 
 .grid-container-AboutMe {
@@ -237,6 +237,7 @@ a:hover {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
+
 }
 
 #portfolio {
@@ -284,4 +285,145 @@ a:hover {
 
 textarea {
     font-family: 'Poppins', sans-serif;
+    margin-left: 35px;
+    width: 890px;
+}
+
+@media only screen and (max-width: 980px) {
+    .grid-container-header {
+        width: 940px;
+        grid-template-columns: 62.5% 10% 10% 10%;
+        margin-left: 20px;
+    }
+    .grid-container-AboutMe, .grid-container-FollowMe, .container-portfolio, .grid-container-contact {
+        width: 60%;
+        height: auto;
+        margin-left: 20px;
+    }
+
+    #MyPicture {
+        width: 25%;
+    }
+
+    .grid-container-portfolio {
+        display: grid;
+        width: 80%;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        height: auto
+    }
+
+    .picture {
+        width: 175px;
+        height: 125px;
+        margin-top: 10px;
+    }
+
+    .title {
+        width: 175px;
+        font-size: 13px;
+        padding: 5px;
+        bottom: -2px;
+    }
+
+    textarea, input {
+        width: 88%;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-container-header {
+        width: 100%;
+    }
+
+    .hlink { 
+        font-size: 15px;
+    }
+
+    #HopeGratrix {
+        font-size: 20px;
+        padding: 18px;
+    }
+
+    a:hover {
+        font-size: 20px;
+    }
+
+    .grid-container-AboutMe, .grid-container-FollowMe, .container-portfolio, .grid-container-contact {
+        width: 95%;
+        height: auto;
+    }
+    
+    .followlink {
+        font-size: 15px;
+    }
+
+    .grid-container-portfolio {
+        display: grid;
+        width: 95%;
+    }
+
+}
+
+
+@media only screen and (max-width: 640px) {
+
+    .grid-container-header {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        margin: 0px;
+    }
+
+    .grid-container-portfolio {
+        grid-template-columns: auto;
+    }
+
+    .picture {
+        width: 250px;
+        height: 200px;
+    }
+
+    .title {
+        width: 250px;
+        bottom: -3px;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    #HopeGratrix {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        font-size: 25px;
+        padding: 22.5px;
+        width: 100%;
+        margin: 0px;
+    }
+
+    #About {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        text-align: center;
+    }
+
+    #Portfolio {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        text-align: center;
+    }
+
+    #Contact {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        text-align: center;
+    }
+
+    .hlink {
+        font-size: 15px;
+        padding: 15px;
+    }
 }
