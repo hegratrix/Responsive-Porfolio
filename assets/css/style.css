@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-  }
+}
 
 .grid-container-header {
     display: grid;
@@ -91,7 +91,6 @@ footer {
     color: #323232;
 }
 
-
 #AboutMe {
     color: #96042d;
     font-family: 'Playfair Display', serif;
@@ -109,7 +108,7 @@ footer {
     width: 20%;
     border-style: solid;
     border-color: #96042d;
-    border-width: 2px;
+    border-width: 4px;
     margin-left: 35px;
     float: left;
     margin-right: 25px;
@@ -121,15 +120,16 @@ footer {
     line-height: 1.6;
 }
 
-p{
+p {
     margin-right: 35px;
     margin-left: 35px;
+    color: black;
 }
 
 .grid-container-contact {
     background: #e6e6e6;
     width: 960px;
-    height: 500px;
+    height: auto;
     margin: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -199,6 +199,18 @@ button {
     border-color: #96042d;
 }
 
+.grid-container-FollowMe2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #e6e6e6;
+    width: 956px;
+    height: 50px;
+    margin: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .follow {
     width: 30px;
     height: 30px;
@@ -239,7 +251,6 @@ button {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
-
 }
 
 #portfolio {
@@ -292,13 +303,20 @@ textarea {
     width: 890px;
 }
 
+.contact-info {
+    color: #96042d;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
 @media only screen and (max-width: 980px) {
     .grid-container-header {
         width: 100%;
         grid-template-columns: 62.5% 10% 10% 10%;
         /* margin-left: 20px; */
     }
-    .grid-container-AboutMe, .grid-container-FollowMe, .container-portfolio, .grid-container-contact {
+    .grid-container-AboutMe, .grid-container-FollowMe, .grid-container-FollowMe2, .container-portfolio, .grid-container-contact {
         width: 100%;
         height: auto;
     }
@@ -335,7 +353,6 @@ textarea {
     button {
         margin-bottom: 10px;
     }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -369,15 +386,12 @@ textarea {
         display: grid;
         width: 95%;
     }
-
 }
 
-
 @media only screen and (max-width: 640px) {
-
     .grid-container-header {
         display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-columns: 33.3% 33.3% 33.3%;
         margin: 0px;
     }
 
@@ -399,7 +413,7 @@ textarea {
 
     #HopeGratrix {
         grid-column-start: 1;
-        grid-column-end: 6;
+        grid-column-end: 4;
         font-size: 25px;
         padding: 22.5px;
         width: 100%;
@@ -407,20 +421,20 @@ textarea {
     }
 
     #About {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: center;
+    }
+
+    #Portfolio {
         grid-column-start: 2;
         grid-column-end: 3;
         text-align: center;
     }
 
-    #Portfolio {
+    #Contact {
         grid-column-start: 3;
         grid-column-end: 4;
-        text-align: center;
-    }
-
-    #Contact {
-        grid-column-start: 4;
-        grid-column-end: 5;
         text-align: center;
     }
 
@@ -435,5 +449,14 @@ textarea {
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #FollowMe {
+        display: none;
+    }
+
+    .follow {
+        width: 20px;
+        height: 20px;
     }
 }
