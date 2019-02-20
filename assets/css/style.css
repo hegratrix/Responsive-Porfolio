@@ -1,0 +1,439 @@
+* {
+    box-sizing: border-box;
+  }
+
+.grid-container-header {
+    display: grid;
+    grid-template-columns: 62.5% 12.5% 12.5% 12.5%;
+    width: 960px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid-item {
+    padding: 20px;
+}
+
+.header {
+    width: 100%;
+    background:#808080;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #e6e6e6;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+   background-image: url("../images/dark_embroidery.png")
+}
+
+#HopeGratrix {
+    background: #96042d;
+    color: #e6e6e6;
+    font-size: 25px;
+    width: 250px;
+    text-align: center;
+    padding: 22.5px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: 'Playfair Display', serif;
+    margin: 10px;
+    margin-left: 0;
+}
+
+#About {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#Portfolio {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#Contact {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.hlink {
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+    font-size: 20px;
+    color: #e6e6e6;
+    padding-top: 35px;
+    text-decoration: none;
+}
+
+footer {
+    background: #808080;
+    border-top-style: solid;
+    border-color: #e6e6e6;
+    border-width: 5px;
+    position: relative;
+    bottom: 0;
+    width:100%;
+    height:40px;
+}
+
+.grid-container-AboutMe {
+    background: #e6e6e6;
+    width: 960px;
+    height: auto;
+    margin: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #96042d;
+    color: #323232;
+}
+
+
+#AboutMe {
+    color: #96042d;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-left: 35px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-bottom-style: solid;
+    border-color: #808080;
+    border-width: 4px;
+    margin-right: 35px;
+}
+
+#MyPicture {
+    width: 20%;
+    border-style: solid;
+    border-color: #96042d;
+    border-width: 2px;
+    margin-left: 35px;
+    float: left;
+    margin-right: 25px;
+}
+
+#MyBio {
+    font-family: 'Handlee', cursive;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+p{
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.grid-container-contact {
+    background: #e6e6e6;
+    width: 960px;
+    height: 500px;
+    margin: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #96042d;
+    margin-bottom: 40px;   
+}
+
+#contact {
+    color: #96042d;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-left: 35px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    border-bottom-style: solid;
+    border-color: #808080;
+    border-width: 4px;
+    margin-right: 35px;
+}
+
+label {
+    font-family:'Handlee', cursive;
+    color: #323232;
+    font-size: 15px;
+    margin-left: 35px;
+    display: inline-block;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 890px;
+    color: #323232;
+    margin-left: 35px;
+    border-style: solid;
+    border-color: #808080;
+    border-width: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    margin-left: 35px;
+    color: #e6e6e6;
+    background-color: #96042d;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#message {
+    padding: 80px;
+}
+
+.grid-container-FollowMe {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #e6e6e6;
+    width: 960px;
+    height: 50px;
+    margin: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #96042d;
+}
+
+.follow {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.followlink {
+    font-size: 20px;
+    color: #808080;
+    font-family: 'Poppins', sans-serif;
+}
+
+#FollowMe {
+    color: #96042d;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
+.hlink:hover, .followlink:hover {
+    font-size: 25px;
+    color: #96042d;
+}
+
+.container-portfolio {
+    display: grid;
+    background: #e6e6e6;
+    width: 960px;
+    height: auto;
+    margin: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #96042d;
+}
+
+.grid-container-portfolio {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+
+}
+
+#portfolio {
+    color: #96042d;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-left: 35px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-bottom-style: solid;
+    border-color: #808080;
+    border-width: 4px;
+    margin-right: 35px;
+}
+
+.picture {
+    width: 250px;
+    height: 200px;
+    border-style: solid;
+    border-color: #96042d;
+    border-width: 2px;
+    align-content: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.title {
+    background-color: #96042d;
+    padding: 10px;
+    width: 250px;
+    color: #e6e6e6;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #323232;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.relative {
+    position: relative;
+    bottom: 15px;
+}
+
+textarea {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 35px;
+    width: 890px;
+}
+
+@media only screen and (max-width: 980px) {
+    .grid-container-header {
+        width: 100%;
+        grid-template-columns: 62.5% 10% 10% 10%;
+        /* margin-left: 20px; */
+    }
+    .grid-container-AboutMe, .grid-container-FollowMe, .container-portfolio, .grid-container-contact {
+        width: 100%;
+        height: auto;
+    }
+
+    #MyPicture {
+        width: 25%;
+    }
+
+    .grid-container-portfolio {
+        display: grid;
+        width: 80%;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        height: auto
+    }
+
+    .picture {
+        width: 175px;
+        height: 125px;
+        margin-top: 10px;
+    }
+
+    .title {
+        width: 175px;
+        font-size: 13px;
+        padding: 5px;
+        bottom: -2px;
+    }
+
+    textarea, input {
+        width: 88%;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-container-header {
+        width: 100%;
+    }
+
+    .hlink { 
+        font-size: 15px;
+    }
+
+    #HopeGratrix {
+        font-size: 20px;
+        padding: 18px;
+    }
+
+    a:hover {
+        font-size: 20px;
+    }
+
+    .grid-container-AboutMe, .grid-container-FollowMe, .container-portfolio, .grid-container-contact {
+        width: 95%;
+        height: auto;
+    }
+    
+    .followlink {
+        font-size: 15px;
+    }
+
+    .grid-container-portfolio {
+        display: grid;
+        width: 95%;
+    }
+
+}
+
+
+@media only screen and (max-width: 640px) {
+
+    .grid-container-header {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        margin: 0px;
+    }
+
+    .grid-container-portfolio {
+        grid-template-columns: auto;
+    }
+
+    .picture {
+        width: 250px;
+        height: 200px;
+    }
+
+    .title {
+        width: 250px;
+        bottom: -3px;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    #HopeGratrix {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        font-size: 25px;
+        padding: 22.5px;
+        width: 100%;
+        margin: 0px;
+    }
+
+    #About {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        text-align: center;
+    }
+
+    #Portfolio {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        text-align: center;
+    }
+
+    #Contact {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        text-align: center;
+    }
+
+    .hlink {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    #MyPicture {
+        float: none;
+        width: 175px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
