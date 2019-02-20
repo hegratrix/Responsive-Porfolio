@@ -39,6 +39,8 @@ body {
     grid-column-start: 1;
     grid-column-end: 2;
     font-family: 'Playfair Display', serif;
+    margin: 10px;
+    margin-left: 0;
 }
 
 #About {
@@ -79,7 +81,7 @@ footer {
 .grid-container-AboutMe {
     background: #e6e6e6;
     width: 960px;
-    height: 450px;
+    height: auto;
     margin: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -104,7 +106,7 @@ footer {
 }
 
 #MyPicture {
-    width: 200px;
+    width: 20%;
     border-style: solid;
     border-color: #96042d;
     border-width: 2px;
@@ -215,7 +217,7 @@ button {
     font-size: 25px;
 }
 
-a:hover {
+.hlink:hover, .followlink:hover {
     font-size: 25px;
     color: #96042d;
 }
@@ -224,7 +226,7 @@ a:hover {
     display: grid;
     background: #e6e6e6;
     width: 960px;
-    height: 550px;
+    height: auto;
     margin: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -261,6 +263,7 @@ a:hover {
     border-width: 2px;
     align-content: center;
     position: relative;
+    margin-top: 10px;
 }
 
 .title {
@@ -291,14 +294,13 @@ textarea {
 
 @media only screen and (max-width: 980px) {
     .grid-container-header {
-        width: 940px;
+        width: 100%;
         grid-template-columns: 62.5% 10% 10% 10%;
-        margin-left: 20px;
+        /* margin-left: 20px; */
     }
     .grid-container-AboutMe, .grid-container-FollowMe, .container-portfolio, .grid-container-contact {
-        width: 60%;
+        width: 100%;
         height: auto;
-        margin-left: 20px;
     }
 
     #MyPicture {
