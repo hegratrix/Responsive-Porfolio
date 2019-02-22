@@ -310,6 +310,21 @@ textarea {
     font-size: 25px;
 }
 
+#resume-button {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+
+#resume-div {
+    text-align: center;
+}
+
+#resume {
+    display: none;
+}
+
 @media only screen and (max-width: 980px) {
     .grid-container-header {
         width: 100%;

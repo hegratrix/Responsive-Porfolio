@@ -32,8 +32,11 @@
             </form>
                 <textarea rows="8"></textarea><br>
                 <button>Submit</button> -->
-        <h1 class="contact-info">hope.gratrix@gmail.com</h1>
-        <h1 class="contact-info">(951) 834-4294</h1>
+        <div id="resume-div">
+            <h1 class="contact-info">hope.gratrix@gmail.com</h1>
+            <h1 class="contact-info">(951) 834-4294</h1>
+            <button id="resume-button" onclick="showResume()">Show Resume</button>
+        <embed id="resume" src="./assets/images/my resume.pdf" type="application/pdf" width="100%" height ="600px">
         <div class="grid-container-FollowMe2">
             <h1 id="FollowMe">Follow Me:</h1>
             <div>
@@ -50,7 +53,11 @@
             </div>    
         </div>
     </div>
- 
+    <script>
+        function showResume() {
+            document.querySelector('#resume').style.display = 'block'
+        }
+    </script>
 </body>
 </html>
 
